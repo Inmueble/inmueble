@@ -1,0 +1,240 @@
+<div id='guia_producto' class='row' style='display: block;padding:0;'>
+  <div id='ow-marketplace' class='col-md-12 col-md-12'>
+  <div class='well'>
+  <h4 align='left' class='bg_title'><i class='fa fa-building'></i> DATOS ESPEC&Iacute;FICOS DEL PRODUCTO</h4>
+    <p align='right'><label><span class='camp_ast'>*Campos Obligatorios</span></label></p>
+    
+    <!--agregar Zona-->
+    <div class='row'>
+    <div class='form-group'>
+      <div class='der col-xs-12 col-sm-12 col-md-2 col-md-offset-9'>
+              <label for=''>Agregar Producto(<span id='totProd' class='camp_ast'></span>):</label>
+            </div>
+      <div class='col-xs-12 col-sm-12 col-md-1'>
+        <button type='button' class='btn btn-default' id='agProd' name='agProd' onClick='javascript:agrProd();' >Agregar</button>
+      </div>
+    </div>
+    </div>
+
+    <div id='zonPro'>
+      <input type ='hidden' id='secProD' name='secProD' value='0'>
+      <input type ='hidden' id='contProD' name='contProD' value='1'>
+
+      <input type ='hidden' id='dSec' name='dSec' value='0'>
+
+      <div id='prod0' style='background-color:#dce7ef;'>
+      <br>
+      <!--Eliminar-->
+        <div class='row'>
+          <div class='form-group'>
+            <div class='der col-xs-12 col-sm-12 col-md-2'>
+              <label for=''><span class='camp_ast'>*</span>Producto:</label>
+            </div>
+            <div class='col-xs-12 col-sm-12 col-md-1 col-md-offset-8'>
+              <a onClick='elimProd(0);' id='btn_elim0' class='camp_ast'>Eliminar <span class='glyphicon glyphicon-remove'></span></a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!--Envase de producto-->
+        <div class='row'>
+          <div class='form-group'>
+            <div class='der col-xs-12 col-sm-12 col-md-4'>
+              <label for=''><span class='camp_ast'>*</span>Clase de Producto:</label>
+            </div>
+            <div class='col-xs-12 col-sm-12 col-md-4'>
+              <input type='text' class='form-control' id='EnvProduc0' name='EnvProduc[]' value=''>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!--Especie-->
+        <div id='especies0' style='display:none'>
+        <div class='row'>
+          <div class='form-group'>
+            <div class='der col-xs-12 col-sm-12 col-md-4'>
+              <label for=''><span class='camp_ast'>*</span>Especie:</label>
+            </div>
+            <div class='col-xs-12 col-sm-12 col-md-4'>
+              <input type='text' class='form-control' id='EspProduc0' name='EspProduc[]' value=''>
+            </div>
+          </div>
+        </div>
+        <br>
+        </div>
+        <!--Conservacion-->
+        <div class='row'>
+          <div class='form-group'>
+            <div class='der col-xs-12 col-sm-12 col-md-4'>
+              <label for=''><span class='camp_ast'>*</span>Conservacion:</label>
+            </div>
+            <div class='col-xs-12 col-sm-12 col-md-4'>
+              <input type='text' class='form-control' id='ConProduc0' name='ConProduc[]' value=''>
+            </div>
+          </div> 
+        </div>
+        <br>
+        <!--Cantidad-->
+        <div class='row'>
+          <div class='form-group'>
+            <div class='der col-xs-12 col-sm-12 col-md-4'>
+              <label for=''><span class='camp_ast'>*</span>Cantidad:</label>
+            </div>
+            <div class='col-xs-12 col-sm-12 col-md-4'>
+              <input type='text' class='form-control' id='CantProduc0' name='CantProduc[]' value='' maxlength='50'>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!--Capacidad-->
+        <div class='row'>
+          <div class='form-group'>
+            <div class='der col-xs-12 col-sm-12 col-md-4'>
+              <label for=''><span class='camp_ast'>*</span>Peso:</label>
+            </div>
+            <div class='col-xs-12 col-sm-12 col-md-2'>
+              <input type='text' class='form-control' id='capacidad0' placeholder='Ejem: 1234' name='capacidad[]'>
+            </div>
+            <div class='col-xs-12 col-sm-12 col-md-2'>
+              <select type='select' class='form-control' id='unidadMedida0' name='unidadMedida[]'>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br>
+      
+      </div>
+
+      <div id='othProd'>
+
+      </div>
+
+
+    </div>
+    
+
+   </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <input type ='hidden' id='id'  name='id'> 
+     <input type ='hidden' id='casoguia'  name='casoguia' value='1'> 
+
+     <h4 align='left' class='bg_title'><i class='fa fa-user'></i> DATOS DE LA GUÍA DE MOVILIZACIÓN</h4>
+     <br>
+     <h5 align='left' class='li_title'>DATOS DE ORIGEN DE LA GUÍA</h5><br>
+     <div class='form-group'>
+     <div class='der col-xs-12 col-sm-12 col-md-4'>
+        <label for=''><span class='camp_ast'>*</span>Rif:</label>
+     </div>
+     <div class='col-xs-12 col-sm-12 col-md-4'>
+     <input type='text' class='form-control' id='rif_origen' name='rif_origen' placeholder='Ej: J/V/G-12345678-9'>
+     <span class='add-on'><i class='icon-th'></i></span>
+     </div>
+     </div>
+      <br>
+      <br>
+    <div class='form-group'>
+     <div class='der col-xs-12 col-sm-12 col-md-4'>
+        <label for=''><span class='camp_ast'>*</span>Permiso Sanitario:</label>
+     </div>
+     <div class='col-xs-12 col-sm-12 col-md-4'>
+       <input type='text' class='form-control' id='perm_origen' name='perm_origen' placeholder='Ej: AAA-TIPO I-9999999'>
+       <span class='add-on'><i class='icon-th'></i></span>
+     </div>
+     </div>
+     <br>
+     <br>
+     <br>
+    <h5 align='left' class='li_title'>DATOS DE LUGAR DESTINO DE LA GUÍA</h5>
+    <br>
+    <br>
+    <br>
+
+    <div id='desti0' style='background-color:#dce7ef;'>
+
+     <input type ='hidden' id='secDesti' name='secDesti' value='0'>
+     <input type ='hidden' id='contDesti' name='contDesti' value='1'>
+     <input type ='hidden' id='dSecDesti' name='dSecDesti' value='0'>
+     <br>
+     <div class='der col-xs-12 col-sm-12 col-md-2 col-md-offset-9'>
+      <label for=''>Agregar Destino(<span id='totDesti' class='camp_ast'></span>):</label>
+      </div>
+      <div class='col-xs-12 col-sm-12 col-md-1'>
+      </div>
+    <div class='row'>
+    <div class='form-group'>
+     <div class='der col-xs-12 col-sm-12 col-md-4'>
+     <label for=''><span class='camp_ast'>*</span>Tipo de Persona:</label>
+     </div>
+      <div class='col-xs-12 col-sm-12 col-md-4'>
+      <select type='select' class='form-control' id='tipo_per' name='tipo_per' disabled>
+      <option value='1'>Personas Juridica</option>        
+      </select>
+     </div>
+    <button type='button' class='btn btn-default' id='agDst' name='agDst' onClick='javascript:agrDesti();' >Agregar</button>
+     </div> 
+    </div>
+    <br>
+    <div class='form-group'>
+     <div class='der col-xs-12 col-sm-12 col-md-4'>
+        <label for=''><span class='camp_ast'>*</span>Rif:</label>
+     </div>
+     <div class='col-xs-12 col-sm-12 col-md-4'>
+     <input type='text' class='form-control' id='rif_destino0' name='rif_destino[]' placeholder='Ej: J/V/G-12345678-9'>
+     <span class='add-on'><i class='icon-th'></i></span>
+     </div>
+     </div>
+      <br><br>
+    <div id='invProy' class='invProy'>
+     <!--Tipo vehiculo-->
+    <div class='row'>
+    <div class='form-group'>
+     <div class='der col-xs-12 col-sm-12 col-md-4'>
+        <label for=''><span class='camp_ast'>*</span>Tipo:</label>
+     </div>
+      <div class='col-xs-12 col-sm-12 col-md-4'>
+      <select type='select' class='form-control' id='tipo_cate0' name='tipo_cate[]' onchange='xajax_armar_tipo(this.value,0)'>
+        </select>
+     </div>
+     </div>      
+    </div>
+   </div>
+      <br>
+    <div class='form-group'>
+     <div class='der col-xs-12 col-sm-12 col-md-4'>
+     <label for=''><span class='camp_ast'>*</span>Permiso Sanitario:</label>
+     </div>
+     <div class='col-xs-12 col-sm-12 col-md-4'>
+       <input type='text' class='form-control' id='perm_destino0' name='perm_destino[]' placeholder='Ej: AAA-TIPO I-9999999'>
+       <span class='add-on'><i class='icon-th'></i></span>
+     </div>
+     </div>
+     <br>
+     <br>
+     
+    </div>
+
+     <div id='othDesti'>
+
+      </div>
+
+
+    <br>
+    <br>
+   <br>
+
